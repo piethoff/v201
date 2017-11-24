@@ -14,16 +14,16 @@ c_k = \frac{\symup{\Delta} Q}{m \cdot T}
 errechnet.
 Es wird unterschieden zwischen der WäWärmekapazität $c_p$ bei kontanten Druck und $c_v$ bei konstanten Volumen.
 \subsection{Das Dulong-Petitsche Gesetz}
-Das Dulong-Petitsche Gesetz besagt, dass die Atomwärme $C-V$ im festen Aggregatszustand 
+Das Dulong-Petitsche Gesetz besagt, dass die Atomwärme $C-V$ im festen Aggregatszustand
 unabhängig vom chemischen Charakter des Elements konstant $3R$ beträgt.
 $R$ ist hier die allgemeine Gaskonstante.
 In der klassischen Physik lässt sich diese Annahme über die innere Energie
  \begin{equation}
- \langle u \rangle = \frac{1}{\tau} \int_0^\tau u(t)dt = \langle E_\text{kin} \rangle + \langle 
+ \langle u \rangle = \frac{1}{\tau} \int_0^\tau u(t)dt = \langle E_\text{kin} \rangle + \langle
 E_\text{pot} \rangle
  \end{equation}
 hergeleitet.
-Die kinetische und potentielle Energien lassen sich über die Annahme herleiten, dass Atome 
+Die kinetische und potentielle Energien lassen sich über die Annahme herleiten, dass Atome
 wie harmonische Oszillatoren schwingen.
 Aus den so aufgestellten Gleichungen für die Energien folgt der Ausdruck:
 \begin{equation}
@@ -32,11 +32,11 @@ C_V = 3R .
 \subsection{Abweichung vom Dulong-Petitsche Gesetz}
 Der Wert $3R$ wird bei hohen Temperaturen tatsächlich gemessen.
 Die meisten Elemente erreichen diesen schon bei Raumtemperatur.
-Substanzen mit geringen Atomgewicht erreichen diesen erst bei 
+Substanzen mit geringen Atomgewicht erreichen diesen erst bei
 Größenordnungen um $1000\si{\celsius}$.
-Dies lässt sich nicht mit der klassischen Physik erklären, 
+Dies lässt sich nicht mit der klassischen Physik erklären,
 daher muss das Problem quantenmechanisch betrachtet werden.
-Die Annahme des Dulong-Petitsche Gesetzes, dass atomre Oszillatoren in Festkörpern 
+Die Annahme des Dulong-Petitsche Gesetzes, dass atomre Oszillatoren in Festkörpern
 beliebig kleine Energien aufnehmen und abgeben können widerspricht der Quantenmechanik.
 Diese besagt, dass Oszillatoren ihre Energie nur in festen Beträgen ändern können:
 \begin{equation}
@@ -44,8 +44,25 @@ Diese besagt, dass Oszillatoren ihre Energie nur in festen Beträgen ändern kö
 \end{equation}
 Somit lässt sich über die Energie folgende Aussage treffen:
 \begin{equation}
-\langle U_\text{qu} \rangle = 3 N_L \langle u_{qu} \rangle = \frac{3 N_L h 
+\langle U_\text{qu} \rangle = 3 N_L \langle u_{qu} \rangle = \frac{3 N_L h
 \omega}{e^{\frac{h\omega}{k_\text{B}T}}-1} .
 \end{equation}
-Aus der Taylorentwicklung der Exponentialfunktion kann entnommen werden, 
+Aus der Taylorentwicklung der Exponentialfunktion kann entnommen werden,
 dass $\langle U_{qu} \rangle$ für hohe Werte von $T$ gegen $3RT$ strebt.
+\subsection{Fehlerrechnung}
+Der Mittelwert errechnet sich durch:
+\begin{equation}
+\label{eq:mittel}
+\overline{v_i}=\frac{1}{n}\sum \limits_{i=1}^n x_i.
+\end{equation}
+Die Standardabweichung mit zufälligen fehlerbehafteten Werten $v_j$ mit $j=1,...,N$ lässt sich durch die Gleichung
+\begin{equation}
+\label{eq:standard}
+s_i=\sqrt{\frac{1}{N-1}\sum \limits_{j=1}^N (v_j-\overline{v_i})^2}.
+\end{equation}
+berechnen.
+Die Streuung der Mittelwerte errechnet sich wie folgt:
+\begin{equation}
+\label{eq:streuung}
+\sigma_i=\frac{s_i}{\sqrt{N}}=\frac{{\sqrt{\frac{1}{N-1}\sum \limits_{j=1}^N (v_j-\overline{v_i})^2}}}{\sqrt{N}}=\sqrt{\frac{\sum \limits_{j=1}^N (v_j-\overline{v_i})^2}{N(N-1)}}.
+\end{equation}
