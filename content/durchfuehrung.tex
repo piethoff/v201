@@ -1,18 +1,18 @@
 \section{Durchführung}
 \label{sec:Durchführung}
-Um die Gültigkeit des Dulon-Petitschen Gesetzes zu bestimmen, werden die Wärmekapazitäten verschiedener Materialien 
+Um die Gültigkeit des Dulon-Petitschen Gesetzes zu bestimmen, werden die Wärmekapazitäten verschiedener Materialien
 mithilfe eine Mischungskalorimeters bestimmt.
-Hierbei wird das Material zunächst erwärmt und danach in ein Dewar-Gefäß mit Wasser eingetaucht, 
-bis sich ein Gleichgewicht der Temperaturen einstellt. 
+Hierbei wird das Material zunächst erwärmt und danach in ein Dewar-Gefäß mit Wasser eingetaucht,
+bis sich ein Gleichgewicht der Temperaturen einstellt.
 Es werden die Temperaturen des Wassers vor und nach dem Eintauchen und die Temperatur des Materials vor dem Eintauchen gemessen.
-Unter der Annahme, dass keine Wärme nach außen verloren geht, 
+Unter der Annahme, dass keine Wärme nach außen verloren geht,
 muss die Abkühlung des Materials einer Erwärmung des Wassers und des Gefäßes zufolge haben.
 Es folgt daraus:
 \begin{gather}
     c_km_k(T_k-T_m) = (c_wm_w + c_gm_g)(T_m - T_w) \\
     c_k = \frac{(c_wm_w + c_gc_m)(T_m - T_w)}{m_k(T_k - T_m)}
 \end{gather}
-$T_k$ ist hierbei die Temperatur des Materials vor dem Eintauchen, $T_w$ ist die des Wassers vor dem Eintauchen, 
+$T_k$ ist hierbei die Temperatur des Materials vor dem Eintauchen, $T_w$ ist die des Wassers vor dem Eintauchen,
 $T_m$ ist die Mischtemperatur und $c_gm_g$ ist die Wärmekapazität des Gefäßes.
 Zunächst muss also die Wärmekapazität des Gefäßes vermessen werden. Dies folgt dem gleichen Verfahren, jedoch wird ein Material verwendet
 dessen Wärmekapazität bereits bekannt ist, hier Wasser.
@@ -21,9 +21,9 @@ Es ergibt sich die Formel:
     \label{eqn:gefaess}
     c_gm_g = \frac{c_wm_y\left(T_y - T^{\prime}_m\right) - c_wm_y\left(T^{\prime}_m - T_x\right)}{T^{\prime}_m - T_x}
 \end{equation}
-Es muss außerdem beachtet werden, dass die Theorie sich, wie in Gleichung \eqref{eqn:peitsche}, 
+Es muss außerdem beachtet werden, dass die Theorie sich, wie in Gleichung \eqref{eqn:peitsche},
 auf die Wärmekapazität bei konstantem Volumen bezieht.
-Dies ist jedoch technisch sehr aufwendig. Stattdessen wird bei konstantem Druck gemessen, 
+Dies ist jedoch technisch sehr aufwendig. Stattdessen wird bei konstantem Druck gemessen,
 wodurch quasi kein zusätzlicher Aufwand entsteht, und $C_V$ mit folgender Formel bestimmt:
 \begin{equation}
     C_V = C_P - (3\alpha)^2\kappa\symup{V_0}T
@@ -32,7 +32,7 @@ Hier ist $\alpha$ ein linearer Ausdehnungskoeffitient, $\kappa$ der Kompressions
 Alle benötigten Konstanten sind im Folgenden aufgeführt:
 \begin{table}
     \centering
-    \caption{Materialkonstanten.}
+    \caption{Materialkonstanten\cite{v201}.}
     \label{tab:const}
     \begin{tabular}{c S[table-format=2.1(0)e0] S[table-format=3.2(0)e0] c S[table-format=3.2(0)e0] }
         \toprule
