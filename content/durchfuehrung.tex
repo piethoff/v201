@@ -19,7 +19,7 @@ dessen Wärmekapazität bereits bekannt ist, hier Wasser.
 Es ergibt sich die Formel:
 \begin{equation}
     \label{eqn:gefaess}
-    c_gm_g = \frac{c_wm_y\left(T_y - T^{\prime}_m\right) - c_wm_y\left(T^{\prime}_m - T_x\right)}{T^{\prime}_m - T_x}
+    c_gm_g = \frac{c_wm_y\left(T_y - T^{\prime}_m\right) - c_wm_x\left(T^{\prime}_m - T_x\right)}{T^{\prime}_m - T_x}
 \end{equation}
 Es muss außerdem beachtet werden, dass die Theorie sich, wie in Gleichung \eqref{eqn:peitsche},
 auf die Wärmekapazität bei konstantem Volumen bezieht.
@@ -34,7 +34,7 @@ Alle benötigten Konstanten sind im Folgenden aufgeführt:
     \centering
     \caption{Materialkonstanten\cite{v201}.}
     \label{tab:const}
-    \begin{tabular}{c S[table-format=2.1(0)e0] S[table-format=3.2(0)e0] c S[table-format=3.2(0)e0] }
+    \begin{tabular}{c S[table-format=2.1(0)e0] S[table-format=3.2(0)e0] S S[table-format=3.2(0)e0] }
         \toprule
         {Material} & {$ρ/\si{\gram\per\cm\cubed}$} & {$M/\si{\gram\per\mol}$} & {$α/\SI{e-6}{\per\kelvin}$} & {$κ/\SI{e9}{\newton\per\meter\squared}$} \\
         \midrule
