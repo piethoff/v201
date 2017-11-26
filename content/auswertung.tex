@@ -7,24 +7,39 @@ Die für diese Messung erhaltenen Werte befinden sich in Tabelle \ref{tab:t1}:
 	\centering
 	\caption{Die gemessenen Daten für das Kalorimeter.}
 	\label{tab:t1}
-	\begin{tabular}{l l l}
+	\begin{tabular}{c s[table-format=3.2]}
 	\toprule
 
-	$m_{\text{gesamt}}$ &  $561.47 \si{\gram}$   & \\
-	$m_{\text{x}}$  	&  $285.11 \si{\gram}$   & \\
-	$m_{\text{y}}$  	&  $276.36 \si{\gram}$   & \\
-	$T_{\text{x}}$  	& $20.9\si{\celsius}$ & $294.05 \si{\kelvin}$ \\
-	$T_{\text{y}}$  	& $86.7\si{\celsius}$  & $359.85 \si{\kelvin}$ \\
-	$T_{\text{m'}}$ 	& $49.2\si{\celsius}$ & $322.35 \si{\kelvin}$ \\
+	$m_{\text{gesamt}}$     & \SI{561.47}{\gram}    \\
+	$m_{\text{x}}$  	    & \SI{285.11}{\gram}    \\
+	$m_{\text{y}}$  	    & \SI{276.36}{\gram}    \\
+	$T_{\text{x}}$  	    & \SI{294.05}{\kelvin}  \\
+	$T_{\text{y}}$  	    & \SI{359.85}{\kelvin}  \\
+	$T^{\prime}_{\text{m}}$ & \SI{322.35}{\kelvin}  \\
 	\bottomrule
 	\end{tabular}
 \end{table}
-Mit der spezifischen Wärmeleitfähigkeit von Wasser $c_w=4,18 \frac{\si{\joule}}{\si{\gram}\si{\kelvin}}$ \cite{waermeleit} und Formel ergibt sich für das Kaloriemeter die Wärmekapazität:
+Mit der spezifischen Wärmeleitfähigkeit von Wasser $c_w = \SI[per-mode=reciprocal]{4,18}{\joule\per\gram\per\kelvin}$ \cite{waermeleit} 
+und Formel \eqref{eqn:gefaess} ergibt sich für das Kalorimeter die Wärmekapazität:
 \begin{equation*}
-c_gm_g= 338.96\frac{\si{\joule}}{\si{\kelvin}}.
+c_gm_g = \SI{338.96}{\joule\per\kelvin}
 \end{equation*}
 \subsection{Bestimmung der Wärmekapazität von Kupfer}
-
+%
 \subsection{Bestimmung der Wärmekapazität von Aluminium}
-
+%
 \subsection{Bestimmung der Wärmekapazität von Blei}
+In den drei Messungen für das Bleirohr werden folgende Werte aufgenommen:
+\begin{table}
+    \centering
+    \caption{.}
+    \begin{tabular}{S[table-format=3.2(0)e0] S[table-format=2.1(0)e0] S[table-format=2.1(0)e0] S[table-format=2.1(0)e0] }
+        \toprule
+        {$m_w$} &       {$T_k$} &       {$T_w$} &       {$T_m$} \\
+        \midrule
+        788.6   & 76.5  & 21.0  & 22.5  \\
+        793.25  & 79.3  & 20.9  & 22.6  \\
+        775.76  & 77.4  & 21.1  & 22.7  \\
+        \bottomrule
+    \end{tabular}
+\end{table}

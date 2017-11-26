@@ -1,6 +1,14 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
+import matplotlib as mpl
+
+mpl.use('pgf')
+mpl.rcParams.update({
+    'pgf.preamble': r'\usepackage{siunitx}',
+})
+
+
 x = np.linspace(0, 10, 1000)
 y = x ** np.sin(x)
 
