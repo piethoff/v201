@@ -1,5 +1,5 @@
 \section{Zielsetzung}
-Zielsetzung dieses Versuchs ist es die Gültigkeit des Dulong-Petitsche-Gesetzes zu üperprüfen.
+Zielsetzung dieses Versuchs ist es die Gültigkeit des Dulong-Petitsche-Gesetzes zu überprüfen.
 \section{Theorie}
 \label{sec:Theorie}
 Wenn ein Körper sich um die Temperatur $\symup{\Delta} T$ erwärmt, nimmt er die Wärmemenge
@@ -7,23 +7,23 @@ Wenn ein Körper sich um die Temperatur $\symup{\Delta} T$ erwärmt, nimmt er di
 \symup{\Delta} Q = m c \symup{\Delta} T
 \end{equation}
 auf.
-Die spezifiche Wärmekapazität wird durch
+Die spezifische Wärmekapazität wird durch
 \begin{equation}
 c_k = \frac{\symup{\Delta} Q}{m \cdot T}
 \end{equation}
-errechnet.
-Es wird unterschieden zwischen der Wärmekapazität $C_P$ bei kontanten Druck und $C_V$ bei konstanten Volumen.
+berechnet.
+Es wird unterschieden zwischen der Wärmekapazität $C_P$ bei kontantem Druck und $C_V$ bei konstantem Volumen.
 \subsection{Das Dulong-Petitsche Gesetz}
-Das Dulong-Petitsche Gesetz besagt, dass die Atomwärme $C_V$ im festen Aggregatszustand
+Das Dulong-Petitsche Gesetz besagt, dass die Atomwärme $C_V$ im festen Aggregatzustand
 unabhängig vom chemischen Charakter des Elements konstant $3R$ beträgt.
 $R$ ist hier die allgemeine Gaskonstante.
-In der klassischen Physik lässt sich diese Annahme über die innere Energie
+In der klassischen Physik lässt sich diese Annahme über die mittlere innere Energie
  \begin{equation}
  \langle u \rangle = \frac{1}{\tau} \int_0^\tau u(t)\symup{dt} = \langle E_\text{kin} \rangle + \langle
 E_\text{pot} \rangle
  \end{equation}
 hergeleitet.
-Die kinetische und potentielle Energien lassen sich über die Annahme herleiten, dass Atome
+Die mittlere kinetische und potentielle Energie lässt sich über die Annahme herleiten, dass Atome
 wie harmonische Oszillatoren schwingen.
 Aus den so aufgestellten Gleichungen für die Energien folgt der Ausdruck:
 \begin{equation}
@@ -31,13 +31,14 @@ Aus den so aufgestellten Gleichungen für die Energien folgt der Ausdruck:
 C_V = 3R
 \end{equation}
 \subsection{Abweichung vom Dulong-Petitsche Gesetz}
-Der Wert $3R$ wird bei hohen Temperaturen tatsächlich gemessen.
+Der Wert $3R = 3\cdot8.314$ \cite{codata} wird bei hohen Temperaturen tatsächlich gemessen.
 Die meisten Elemente erreichen diesen schon bei Raumtemperatur.
-Substanzen mit geringen Atomgewicht erreichen diesen erst bei
+Substanzen mit geringem Atomgewicht erreichen diesen erst bei
 Größenordnungen um $1000\si{\celsius}$.
 Dies lässt sich nicht mit der klassischen Physik erklären,
-daher muss das Problem quantenmechanisch betrachtet werden.
-Die Annahme des Dulong-Petitsche Gesetzes, dass atomare Oszillatoren in Festkörpern
+für eine adäquate Beschreibung der Phänomene muss
+das Problem quantenmechanisch betrachtet werden.
+Die Annahme des Dulong-Petitschen Gesetzes, dass atomare Oszillatoren in Festkörpern
 beliebig kleine Energien aufnehmen und abgeben können widerspricht der Quantenmechanik.
 Diese besagt, dass Oszillatoren ihre Energie nur in festen Beträgen ändern können:
 \begin{equation}
@@ -56,7 +57,7 @@ Der Mittelwert errechnet sich durch:
 \label{eq:mittel}
 \overline{x}=\frac{1}{N}\sum \limits_{i=1}^N x_i
 \end{equation}
-Die Standardabweichung mit zufälligen fehlerbehafteten Werten $v_j$ mit $j=1,...,N$ lässt sich durch die Gleichung
+Die Standardabweichung mit zufälligen fehlerbehafteten Werten $s_x$ lässt sich durch die Gleichung
 \begin{equation}
 \label{eq:standard}
 s_x=\sqrt{\frac{1}{N-1}\sum \limits_{i=1}^N \left(x_i-\overline{x}\right)^2}
