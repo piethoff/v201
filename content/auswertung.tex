@@ -77,7 +77,7 @@ für die Wämekapazität des Aluminiumrohrs.
 \subsection{Bestimmung der Wärmekapazität von Blei}
 Das Bleirohr besitzt eine Masse von:
 \begin{equation}
-    m_k = \SI{683,39}{\gram}
+    m_k = \SI{543.34}{\gram}
 \end{equation}
 In den drei Messungen für das Bleirohr werden folgende Werte aufgenommen:
 \begin{table}[H]
@@ -87,14 +87,77 @@ In den drei Messungen für das Bleirohr werden folgende Werte aufgenommen:
         \toprule
         {$m_w/\si{\gram}$} &       {$T_k/\si{\kelvin}$} &       {$T_w/\si{\kelvin}$} &       {$T_m/\si{\kelvin}$} & {$c_k/\si[per-mode=reciprocal]{\joule\per\gram\per\kelvin}$}\\
         \midrule
-        788.6   & 349.65  & 294.15  & 295.65    & 0.148\\
-        793.25  & 352.45  & 294.05  & 295.75    & 0.160\\
-        775.76  & 350.55  & 294.25  & 295.85    & 0.153\\
+        581.96   & 349.65  & 294.15  & 295.65    & 0.141\\
+        586.61  & 352.45  & 294.05  & 295.75    & 0.154\\
+        569.12  & 350.55  & 294.25  & 295.85    & 0.146\\
         \bottomrule
     \end{tabular}
 \end{table}
 Somit ergibt sich ein Wert von:
 \begin{equation}
-    c_k = \SI{0.154 \pm 0.004}{\joule\per\gram\per\kelvin}
+    c_k = \SI{0.147 \pm 0.004}{\joule\per\gram\per\kelvin}
 \end{equation}
 \subsection{Bestimmung der Atomwärme}
+In den Tabellen \ref{tab:at_ku}, \ref{tab:at_al} und \ref{tab:pb} werden die zuvor berechneten Werte in \si{\joule\per\kelvin\per\mol} umgewandelt und mit Gleichung \eqref{eqn:dubbi} die Wärmekapazität bei konstantem Volume berechnet.
+Es werden die Konstanten aus Tabelle \ref{tab:const}} verwendet.
+\begin{table}[H]
+	\centering
+	\caption{Die benötigten Daten zur Berechnung für die Molwärme von Kupfer.}
+	\label{tab:at_ku}
+	\begin{tabular}{c c c c c c}
+	\toprule
+	$ $ & $1.Messung$ & $2. Messung$ & $3. Messung$ \\
+	\midrule
+	$c_{\text{k}}$ & 0.897 $\frac{\text{J}}{\text{gK}}$ & 0.635 $\frac{\text{J}}{\text{gK}}$ & 0.795 $\frac{\text{J}}{\text{gK}}$ \\
+	$c_{\text{p}}$ & 57.00 $\frac{\si{\joule}}{\si{\mol \kelvin}}$ & 40.35 $\frac{\si{\joule}}{\si{\mol \kelvin}}$ & 50.52 $\frac{\si{\joule}}{\si{\mol \kelvin}}$ \\
+	$T_{\text{m}}$ & $298,15 \si{\kelvin}$ & $296,65 \si{\kelvin}$ & $296,75 \si{\kelvin}$ \\
+	\midrule
+	$C_{\text{V}}$ & 56.27 $\frac{\si{\joule}}{\si{\mol \kelvin}}$ &  39.62 $\frac{\si{\joule}}{\si{\mol \kelvin}}$ &  49.52 $\frac{\si{\joule}}{\si{\mol \kelvin}}$ \\
+	\bottomrule
+	\end{tabular}
+\end{table}
+Im mittel ergibt sich daraus für Kupfer folgende Wärmekapazität:
+\begin{equation*}
+	C_V=(48.47 \pm 4.84)\frac{\si{\joule}}{\si{\mol \kelvin}}
+\end{equation*}
+\begin{table}[H]
+	\centering
+	\caption{Die benötigten Daten zur Berechnung für die Molwärme von Aluminium.}
+	\label{tab:at_alu}
+	\begin{tabular}{c c c c c c}
+	\toprule
+	$ $ & $1.Messung$ & $2. Messung$ & $3. Messung$ \\
+	\midrule
+	$c_{\text{k}}$ & 1.305 $\frac{\text{J}}{\text{gK}}$ & 0.933 $\frac{\text{J}}{\text{gK}}$ & 0.984 $\frac{\text{J}}{\text{gK}}$ \\
+	$c_{\text{p}}$ & 35.235 $\frac{\si{\joule}}{\si{\mol \kelvin}}$ & 25.191 $\frac{\si{\joule}}{\si{\mol \kelvin}}$ & 26.568 $\frac{\si{\joule}}{\si{\mol \kelvin}}$ \\
+	$T_{\text{m}}$ & $296,65 \si{\kelvin}$ & $296,85 \si{\kelvin}$ & $296,35 \si{\kelvin}$ \\
+	\midrule
+	$C_{\text{V}}$ & 34.130 $\frac{\si{\joule}}{\si{\mol \kelvin}}$ &  24.084 $\frac{\si{\joule}}{\si{\mol \kelvin}}$ &  25.463 $\frac{\si{\joule}}{\si{\mol \kelvin}}$ \\
+	\bottomrule
+	\end{tabular}
+\end{table}
+Im mittel ergibt sich daraus für Aluminium folgende Wärmekapazität:
+\begin{equation*}
+	C_V=(27.89 \pm 3.14)\frac{\si{\joule}}{\si{\mol \kelvin}}
+\end{equation*}
+
+\begin{table}[H]
+	\centering
+	\caption{Die benötigten Daten zur Berechnung für die Molwärme von Blei.}
+	\label{tab:at_pb}
+	\begin{tabular}{c c c c c c}
+	\toprule
+	$ $ & $1.Messung$ & $2. Messung$ & $3. Messung$ \\
+	\midrule
+	$c_{\text{k}}$ & 0.141 $\frac{\text{J}}{\text{gK}}$ & 0.154 $\frac{\text{J}}{\text{gK}}$ & 0.146 $\frac{\text{J}}{\text{gK}}$ \\
+	$c_{\text{p}}$ & 29.215 $\frac{\si{\joule}}{\si{\mol \kelvin}}$ & 31.909 $\frac{\si{\joule}}{\si{\mol \kelvin}}$ & 30.251 $\frac{\si{\joule}}{\si{\mol \kelvin}}$ \\
+	$T_{\text{m}}$ & $295,65 \si{\kelvin}$ & $295,75 \si{\kelvin}$ & $295,85 \si{\kelvin}$ \\
+	\midrule
+	$C_{\text{V}}$ & 27.499 $\frac{\si{\joule}}{\si{\mol \kelvin}}$ &  30.192 $\frac{\si{\joule}}{\si{\mol \kelvin}}$ &  28.534 $\frac{\si{\joule}}{\si{\mol \kelvin}}$ \\
+	\bottomrule
+	\end{tabular}
+\end{table}
+Im mittel ergibt sich daraus für Aluminium folgende Wärmekapazität:
+\begin{equation*}
+	C_V=(28.74 \pm 0.78)\frac{\si{\joule}}{\si{\mol \kelvin}}
+\end{equation*}
