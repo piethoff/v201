@@ -40,12 +40,44 @@ Daraus folgt die Bewegungsgleichung:
 \end{equation}
 Welche die bekannte Lösung
 \begin{equation}
+  \label{eq:loes1}
   x(t)=A \cos{2\pi t}
 \end{equation}
-hat.
-Durch Integratio der Rücktreibenden Kraft erhält man die potentielle Energie der Form:
+mit
 \begin{equation}
-  \langle E_\text{pot} \rangle
+  \label{eq:loes2}
+  \uptau = 4 \pi^2 \frac{m}{D}
+\end{equation}
+hat.
+Durch Integration der Rücktreibenden Kraft erhält man die potentielle Energie der Form:
+\begin{equation}
+  E_\text{pot}(t) = \frac{1}{2}Dx^2(t).
+\end{equation}
+Mit dieser ergibt sich eine mittlere Energie von:
+\begin{equation}
+  \langle E_\text{pot} \rangle = \frac{1}{\uptau} \int_0^\uptau \frac{1}{2}Dx(t)=\frac{DA^2}{2\uptau}\int_0^\uptau \cos^2{\frac{2\pi}{\uptau}t}dt =\frac{1}{4}DA^2
+\end{equation}
+Analog folgt aus den Gleichungen \eqref{eq:loes1} und \eqref{eq:loes2} die mittlere kinetische Energie:
+\begin{equation}
+  \langle E_\text{kin} \rangle = \frac{m}{2\uptau} A^2 \int_0^\uptau (\frac{2\pi}{\uptau})^2 \sin^2{\frac{2\pi}{\uptau}t} dt = \frac{1}{4}DA^2
+\end{equation}
+Somit folgt für die Innere Energie:
+\begin{equation}
+  \langle u \rangle = 2 \langle E_\text{kin} \rangle .
+\end{equation}
+Das Äquipationstheorem besagt, dass ein Atom die mittlere kinetische Energie
+\begin{equation}
+  \langle E_\text{kin} \rangle = \frac{1}{2}kT
+\end{equation}
+pro Freiheitsgrad besitzt.
+Für ein Mol eines Stoffes mit $N_l=6 \cdot 10^23/\si{\per\mol}$\cite{v201} Atomen ergibt sich eine mitllere innere Energie von
+\begin{equation}
+  \langle U \rangle = N_l \langle u \rangle = N_l k T = R T
+\end{equation}
+pro Freiheitsgrad.
+Ein Atom im Festkörper besitzt drei Freiheitsgrade, also gilt:
+\begin{equation}
+  \langle U \rangle _\text{Festkörper}= 3 R T
 \end{equation}
 Aus den so aufgestellten Gleichungen für die Energien folgt der Ausdruck:
 \begin{equation}
