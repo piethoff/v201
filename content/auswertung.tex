@@ -1,7 +1,7 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 \subsection{Bestimmung der Wärmekapazität des Kaloriemeters}
-Da die Wärmekapazität des Kaloriemeters für die Bestimmung der Wärmekapazitäten 
+Da die Wärmekapazität des Kaloriemeters für die Bestimmung der Wärmekapazitäten
 der hier Untersuchten Stoffe benötigt wird, wird diese zuerst bestimmt.
 Die für diese Messung erhaltenen Werte befinden sich in Tabelle \ref{tab:t1}:
 \begin{table}[H]
@@ -10,16 +10,16 @@ Die für diese Messung erhaltenen Werte befinden sich in Tabelle \ref{tab:t1}:
 	\label{tab:t1}
 	\begin{tabular}{SSSSSS}
 	\toprule
-	{$m_{\text{gesamt}}$/\si{\gram}} & {$m_{\text{x}}$/\si{\gram}} & {$m_{\text{y}}$/\si{\gram}} &	
-{$T_{\text{x}}$/\si{\kelvin}} & 
-{$T_{\text{y}}$/\si{\gram}} & 	
+	{$m_{\text{gesamt}}$/\si{\gram}} & {$m_{\text{x}}$/\si{\gram}} & {$m_{\text{y}}$/\si{\gram}} &
+{$T_{\text{x}}$/\si{\kelvin}} &
+{$T_{\text{y}}$/\si{\gram}} &
         {$T^{\prime}_{\text{m}}$/\si{\gram}}\\
     \midrule
     561.47 & 285.11 & 276.36 & 294.05 & 359.85 & 322.35 \\
     \bottomrule
 	\end{tabular}
 \end{table}
-\noindent Mit der spezifischen Wärmeleitfähigkeit von Wasser \mbox{$c_w = 
+\noindent Mit der spezifischen Wärmeleitfähigkeit von Wasser \mbox{$c_w =
 \SI[per-mode=reciprocal]{4,18}{\joule\per\gram\per\kelvin}$ \cite{waermeleit}}
 und \mbox{Formel \eqref{eqn:gefaess}} ergibt sich für das Kalorimeter die Wärmekapazität:
 \begin{equation*}
@@ -49,6 +49,10 @@ In den drei Messungen für das Kupferrohr werden folgende Werte aufgenommen:
 	c_k=\SI{0.78\pm 0.08}{\joule\per\gram\per\kelvin}
 \end{equation*}
 für die Wämekapazität des Kupfer.
+Der Fehler berechnet sich mit:
+\begin{equation*}
+	\Delta c_k = \sqrt{\frac{1}{N(N-1)}\sum_j=1^N (c_{kj} - \bar{c_k})^2}.
+\end{equation*}
 %Der so erhaltene Wert weicht um $\SI{101.56}{\percent}$ von dem Literaturwert $c_k=\SI[per-mode=reciprocal]{0.385}{\joule\per\gram\per\kelvin}$\cite{waermeleit} ab.
 \subsection{Bestimmung der Wärmekapazität von Aluminium}
 Das Aluminiumrohr besitzt eine Masse von:
@@ -74,6 +78,10 @@ In den drei Messungen für das Aluminiumrohr werden folgende Werte aufgenommen:
 	c_k=\SI{1.07\pm 0.12}{\joule\per\gram\per\kelvin}
 \end{equation*}
 für die Wämekapazität des Aluminium.
+Der Fehler berechnet sich mit:
+\begin{equation*}
+	\Delta c_k = \sqrt{\frac{1}{N(N-1)}\sum_j=1^N (c_{kj} - \bar{c_k})^2} .
+\end{equation*}
 %Der so erhaltene Wert weicht um $20.94\%$ von dem Literaturwert $c_k=\SI[per-mode=reciprocal]{0.888}{\joule\per\gram\per\kelvin}$\cite{waermeleit} ab.
 \subsection{Bestimmung der Wärmekapazität von Blei}
 Das Bleirohr besitzt eine Masse von:
@@ -98,6 +106,10 @@ In den drei Messungen für das Bleirohr werden folgende Werte aufgenommen:
 \begin{equation}
     c_k = \SI{0.15 \pm 0.01}{\joule\per\gram\per\kelvin}
 \end{equation}
+Der Fehler berechnet sich mit:
+\begin{equation*}
+	\Delta c_k = \sqrt{\frac{1}{N(N-1)}\sum_j=1^N (c_{kj} - \bar{c_k})^2}.
+\end{equation*}
 \subsection{Bestimmung der Atomwärme}
 In den Tabellen \ref{tab:at_cu}, \ref{tab:at_al} und \ref{tab:at_pb} werden die zuvor berechneten Werte in \si{\joule\per\kelvin\per\mol} umgewandelt und mit Gleichung \eqref{eqn:dubbi} die Wärmekapazität bei konstantem Volumen berechnet.
 Es werden die Konstanten aus Tabelle \ref{tab:const} verwendet.
