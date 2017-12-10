@@ -4,26 +4,43 @@ Zielsetzung dieses Versuchs ist es die Gültigkeit des Dulong-Petitsche-Gesetzes
 \label{sec:Theorie}
 Wenn ein Körper sich um die Temperatur $\symup{\Delta} T$ erwärmt, nimmt er die Wärmemenge
 \begin{equation}
-\symup{\Delta} Q = m c \symup{\Delta} T
+\symup{\Delta} Q = cm \symup{\Delta} T
 \end{equation}
 auf.
 Die spezifische Wärmekapazität wird durch
 \begin{equation}
-c_k = \frac{\symup{\Delta} Q}{m \cdot T}
+c = \frac{\symup{\Delta} Q}{m\symup{\Delta}T}
 \end{equation}
 berechnet.
-Es wird unterschieden zwischen der Wärmekapazität $C_P$ bei kontantem Druck und $C_V$ bei konstantem Volumen.
+Mithilfe des Ersten Hauptsatzes der Thermodynamik
+\begin{equation}
+    \symup{d}U = \symup{d}Q + \symup{d}A
+\end{equation}
+und
+\begin{equation}
+    \symup{d}A = -p\symup{d}V \stackrel{\text{V=const.}}{=} 0
+\end{equation}
+kann die Wärmekakazität, bei konstantem Volumen, mit
+\begin{equation}
+    C_V = \left(\frac{\symup{\Delta}U}{\symup{\Delta}T}\right)_\text{V=const.}
+\end{equation}
+ausgedrückt werden und somit folgt für die molare Wärmekapazität, auch Atomwärme,
+\begin{equation}
+    \label{eq:molkap}
+    C_{m,V} = \frac{M}{m}\left(\frac{\symup{\Delta}U}{\symup{\Delta}T}\right)_\text{V=const.},
+\end{equation}
+mit $m$ als Masse des Körpers und $M$ als molare Masse.
 \subsection{Das Dulong-Petitsche Gesetz}
-Das Dulong-Petitsche Gesetz besagt, dass die Atomwärme $C_V$ im festen Aggregatzustand
-unabhängig vom chemischen Charakter des Elements konstant $3R$ beträgt.
+Das Dulong-Petitsche Gesetz besagt, dass die molare Wärmekapazität $C_{m,V}$ im festen Aggregatzustand
+unabhängig vom chemischen Charakter des Stoffs konstant $3R$ beträgt.
 $R$ ist hier die allgemeine Gaskonstante.
-In der klassischen Physik leitet sich diese Annahme über die innere Energie
+In der klassischen Physik leitet sich diese Annahme über die mittlere innere Energie
  \begin{equation}
  \langle u \rangle = \frac{1}{\tau} \int_0^\tau u(t)\symup{dt} = \langle E_\text{kin} \rangle + \langle
 E_\text{pot} \rangle
  \end{equation}
 her.
-Die kinetische und potentielle Energien lassen sich über die Annahme herleiten, dass Atome
+Die kinetischen und potentiellen Energien lassen sich über die Annahme herleiten, dass Atome
 wie harmonische Oszillatoren schwingen.
 Die rücktreibene Kraft der Auslenkung eines Atoms lässt sich in guter Näherung über das Hooksche Gesetz beschreiben:
 \begin{equation}
@@ -36,12 +53,12 @@ Während seine Auslenkung sich nach Newton mit
 beschreiben lässt.
 Daraus folgt die Bewegungsgleichung:
 \begin{equation}
-  m \frac{d^2 x}{dt^2}+Dx=0 .
+  m \frac{d^2 x}{dt^2}+Dx=0 
 \end{equation}
 Welche die bekannte Lösung
 \begin{equation}
   \label{eq:loes1}
-  x(t)=A \cos{2\pi t}
+  x(t)=A \cos{\frac{2\pi}{\uptau}t}
 \end{equation}
 mit
 \begin{equation}
@@ -55,36 +72,36 @@ Durch Integration der rücktreibenden Kraft erhält man die potentielle Energie 
 \end{equation}
 Mit dieser ergibt sich eine mittlere Energie von:
 \begin{equation}
-  \langle E_\text{pot} \rangle = \frac{1}{\uptau} \int_0^\uptau \frac{1}{2}Dx(t)=\frac{DA^2}{2\uptau}\int_0^\uptau \cos^2{\frac{2\pi}{\uptau}t}dt =\frac{1}{4}DA^2
+  \langle E_\text{pot} \rangle = \frac{1}{\uptau} \int_0^\uptau \frac{1}{2}Dx(t)\symup{dt}=\frac{DA^2}{2\uptau}\int_0^\uptau \cos^2{\frac{2\pi}{\uptau}t}\symup{dt} =\frac{1}{4}DA^2
 \end{equation}
 Analog folgt aus den Gleichungen \eqref{eq:loes1} und \eqref{eq:loes2} die mittlere kinetische Energie:
 \begin{equation}
-  \langle E_\text{kin} \rangle = \frac{m}{2\uptau} A^2 \int_0^\uptau (\frac{2\pi}{\uptau})^2 \sin^2{\frac{2\pi}{\uptau}t} dt = \frac{1}{4}DA^2
+  \langle E_\text{kin} \rangle = \frac{m}{2\uptau} A^2 \int_0^\uptau \left(\frac{2\pi}{\uptau}\right)^2 \sin^2{\frac{2\pi}{\uptau}t} \symup{dt} = \frac{1}{4}DA^2
 \end{equation}
 Somit folgt für die Innere Energie:
 \begin{equation}
   \langle u \rangle = 2 \langle E_\text{kin} \rangle
 \end{equation}
-Das Äquipationstheorem besagt, dass ein Atom die mittlere kinetische Energie
+Es folgt das Äquipartitionstheorem, welches besagt, dass ein Atom die mittlere kinetische Energie
 \begin{equation}
   \langle E_\text{kin} \rangle = \frac{1}{2}kT
 \end{equation}
 pro Freiheitsgrad besitzt.
-Für ein Mol eines Stoffes mit $N_l=6 \cdot 10^23/\si{\per\mol}$\cite{v201} Atomen ergibt sich eine mitllere innere Energie von
+Für ein Mol eines Stoffes mit $N_l=6 \cdot 10^23/\si[per-mode=reciprocal]{\per\mol}$\cite{v201} Atomen ergibt sich eine mittlere innere Energie von
 \begin{equation}
-  \langle U \rangle = N_l \langle u \rangle = N_l k T = R T
+  \langle U \rangle = \frac{M}{m} \langle u \rangle = N_l k T = R T
 \end{equation}
 pro Freiheitsgrad.
 Ein Atom im Festkörper besitzt drei Freiheitsgrade, also gilt:
 \begin{equation}
   \langle U \rangle _\text{Festkörper}= 3 R T
 \end{equation}
-Aus den so aufgestellten Gleichungen für die Energien folgt der Ausdruck:
+Aus den so aufgestellten Gleichungen für die Energien folgt mit Gleichung \eqref{eq:molkap} der Ausdruck:
 \begin{equation}
 \label{eqn:peitsche}
-C_V = 3R
+C_{m,V} = 3R
 \end{equation}
-\subsection{Abweichung vom Dulong-Petitsche Gesetz}
+\subsection{Abweichung vom Dulong-Petitschen Gesetz}
 Der Wert $3R$ wird bei hohen Temperaturen tatsächlich erreicht.
 Die meisten Elemente erreichen diesen schon bei Raumtemperatur.
 Wohingegen sich dieser Wert für Substanzen mit geringem Atomgewicht erst bei
@@ -97,10 +114,15 @@ Diese besagt, dass Oszillatoren ihre Energie nur in festen Beträgen ändern kö
 \begin{equation}
 \symup{\Delta} u = n \hbar \omega
 \end{equation}
-Somit lässt sich über die Energie folgende Aussage treffen:
+Somit lässt sich über die Energie mithilfe der Boltzmann-Verteilung folgende Aussage treffen:
 \begin{equation}
-\langle U_\text{qu} \rangle = 3 N_L \langle u_\text{qu} \rangle = \frac{3 N_L h
-\omega}{e^{\frac{h\omega}{k_\text{B}T}}-1}
+    \langle u_\text{qu} \rangle = \frac{\hbar\omega}{k_BT}\int_{\hbar\omega}^{2\hbar\omega}\exp{\left(\frac{-E}{k_BT}\right)}\symup{dE} +
+                            \frac{2\hbar\omega}{k_BT}\int_{2\hbar\omega}^{3\hbar\omega}\exp{\left(\frac{-E}{k_BT}\right)}\symup{dE} + …
+\end{equation}
+Es ergibt sich schließlich:
+\begin{equation}
+    \langle U_\text{qu} \rangle = 3 N_L \langle u_\text{qu} \rangle = \frac{3 N_L h
+        \omega}{\exp{\left(\frac{h\omega}{k_BT}\right)}-1}
 \end{equation}
 Aus der Taylorentwicklung der Exponentialfunktion kann entnommen werden,
 dass $\langle U_\text{qu} \rangle$ für hohe Werte von $T$ gegen $3RT$ strebt.
