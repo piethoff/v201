@@ -1,5 +1,5 @@
 \section{Zielsetzung}
-Zielsetzung dieses Versuchs ist es die Gültigkeit des Dulong-Petitsche-Gesetzes zu überprüfen.
+Zielsetzung dieses Versuchs ist es die Gültigkeit des Dulong-Petitschen-Gesetzes zu überprüfen.
 \section{Theorie}
 \label{sec:Theorie}
 Wenn ein Körper sich um die Temperatur $\symup{\Delta} T$ erwärmt, nimmt er die Wärmemenge
@@ -70,7 +70,7 @@ Durch Integration der rücktreibenden Kraft erhält man die potentielle Energie 
 \begin{equation}
   E_\text{pot}(t) = \frac{1}{2}Dx^2(t)
 \end{equation}
-Mit dieser ergibt sich eine mittlere Energie von:
+Mit dieser ergibt sich eine mittlere kinetische Energie von:
 \begin{equation}
   \langle E_\text{pot} \rangle = \frac{1}{\uptau} \int_0^\uptau \frac{1}{2}Dx(t)\symup{dt}=\frac{DA^2}{2\uptau}\int_0^\uptau \cos^2{\frac{2\pi}{\uptau}t}\symup{dt} =\frac{1}{4}DA^2
 \end{equation}
@@ -78,7 +78,7 @@ Analog folgt aus den Gleichungen \eqref{eq:loes1} und \eqref{eq:loes2} die mittl
 \begin{equation}
   \langle E_\text{kin} \rangle = \frac{m}{2\uptau} A^2 \int_0^\uptau \left(\frac{2\pi}{\uptau}\right)^2 \sin^2{\frac{2\pi}{\uptau}t} \symup{dt} = \frac{1}{4}DA^2
 \end{equation}
-Somit folgt für die Innere Energie:
+Somit folgt für die innere Energie:
 \begin{equation}
   \langle u \rangle = 2 \langle E_\text{kin} \rangle
 \end{equation}
@@ -114,15 +114,15 @@ Diese besagt, dass Oszillatoren ihre Energie nur in festen Beträgen ändern kö
 \begin{equation}
 \symup{\Delta} u = n \hbar \omega
 \end{equation}
-Somit lässt sich über die Energie mithilfe der Boltzmann-Verteilung folgende Aussage treffen:
+Mithilfe der Boltzmann-Verteilung kommt man zu folgender Aussage über die innere Energie:
 \begin{equation}
     \langle u_\text{qu} \rangle = \frac{\hbar\omega}{k_BT}\int_{\hbar\omega}^{2\hbar\omega}\exp{\left(\frac{-E}{k_BT}\right)}\symup{dE} +
                             \frac{2\hbar\omega}{k_BT}\int_{2\hbar\omega}^{3\hbar\omega}\exp{\left(\frac{-E}{k_BT}\right)}\symup{dE} + …
 \end{equation}
 Es ergibt sich schließlich:
 \begin{equation}
-    \langle U_\text{qu} \rangle = 3 N_L \langle u_\text{qu} \rangle = \frac{3 N_L h
-        \omega}{\exp{\left(\frac{h\omega}{k_BT}\right)}-1}
+    \langle U_\text{qu} \rangle = 3 N_L \langle u_\text{qu} \rangle = \frac{3 N_L \hbar
+        \omega}{\exp{\left(\frac{\hbar\omega}{k_BT}\right)}-1}
 \end{equation}
 Aus der Taylorentwicklung der Exponentialfunktion kann entnommen werden,
 dass $\langle U_\text{qu} \rangle$ für hohe Werte von $T$ gegen $3RT$ strebt.
